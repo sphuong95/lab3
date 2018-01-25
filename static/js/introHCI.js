@@ -24,12 +24,13 @@ function initializePage() {
 function projectClick(e) {
 	/*console.log("Project clicked");*/
 	e.preventDefault();
-	$(this).css("background-color", "#7fff000");
+	$(this).css("background-color", "#ff0000");
 	var containingProject = $(this).closest(".project");
     var description = $(containingProject).find(".project-description");
     if (description.length == 0) {
        $(containingProject).append("<div class='project-description'><p>Description of the project.</p></div>");
     } else {
+    	//$(this).fadeToggle("slow", "linear");
     	$(".project-description").fadeToggle("slow", "linear");
     	//description.html("<p>Stop clicking on me! You just did it at " + (new Date()) + "</p>");
     }
