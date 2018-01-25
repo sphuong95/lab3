@@ -1,12 +1,8 @@
-/* applies to anything of class "example-class-selector" */
-.example-class-selector {
-	margin-top: 2em;
-}
-
-/* applies to any <p> descendants of an element of class "example-class-selector" */
-.example-class-selector p {
-	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
-	color: #CC00AA;
+.project {
+     margin-left: 20px;
+     background-color: #deebf7;
+     padding: 20px;
+     width: 525px;
 }
 
 /* this style exists to make it obvious that you've successfully linked
@@ -39,4 +35,8 @@ body {
 
 .project a {
      text-align: center;
+}
+
+.jumbotron p.active {
+     color: #1f6ddd;
 }
